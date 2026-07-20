@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.headspin.io/docs/auth-api
+docs: https://www.headspin.io/docs/auth-api
+summary:
+  types: [http]
+  http_scheme: bearer
+  token_model: api-token
+  oauth2_flows: []
+  api_key_in: []
+schemes:
+  - name: bearerAuth
+    type: http
+    scheme: bearer
+    description: >-
+      HeadSpin REST API calls authenticate with a HeadSpin API token passed as a
+      Bearer token in the Authorization header (Authorization: Bearer <api_token>).
+      Tokens are minted / retrieved via the Authentication API
+      (POST https://api-dev.headspin.io/v0/api/token) and can be provisioned in the
+      HeadSpin UI. The same token drives the `hs` CLI (hs auth init <token>) and
+      the HeadSpin Appium load balancer endpoint (appium-dev.headspin.io:443/v0).
+    sources: [https://www.headspin.io/docs/auth-api]
+notes: >-
+  No OpenAPI is published by HeadSpin; this profile is derived from the documented
+  Authentication API guide. The API is key/token-based (no OAuth2 or OpenID Connect
+  scope surface), so scopes/ is not applicable.
