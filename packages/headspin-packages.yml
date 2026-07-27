@@ -1,0 +1,41 @@
+generated: '2026-07-19'
+method: searched
+source: https://pypi.org/project/headspin-cli/ + https://www.npmjs.com/org/headspinio
+packages:
+  - language: python
+    registry: pypi
+    name: headspin-cli
+    version: 0.4.3
+    url: https://pypi.org/project/headspin-cli/
+    install: pip install --upgrade headspin-cli
+    binary: hs
+    official: true
+    note: Official HeadSpin platform command-line interface (author marius@headspin.io); the `hs` client for the HeadSpin v0 REST API.
+  - language: javascript
+    registry: npm
+    name: "@headspinio/appium-roku-driver"
+    url: https://www.npmjs.com/package/@headspinio/appium-roku-driver
+    install: npm install @headspinio/appium-roku-driver
+    official: true
+    note: Official HeadSpin Appium driver for Roku channels.
+  - language: javascript
+    registry: npm
+    name: "@headspinio/tizen-remote"
+    url: https://www.npmjs.com/package/@headspinio/tizen-remote
+    install: npm install @headspinio/tizen-remote
+    official: true
+    note: Remote-control automation for Samsung Tizen devices.
+  - language: javascript
+    registry: npm
+    name: appium-lg-webos-driver
+    url: https://www.npmjs.com/package/appium-lg-webos-driver
+    install: npm install appium-lg-webos-driver
+    official: true
+    note: Official HeadSpin Appium 2.x driver for LG WebOS apps.
+  - language: javascript
+    registry: npm
+    name: appium-tizen-tv-driver
+    url: https://github.com/headspinio/appium-tizen-tv-driver
+    install: npm install appium-tizen-tv-driver
+    official: true
+    note: Official HeadSpin Appium driver for Samsung Tizen TV.

@@ -1,0 +1,19 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.headspin.io/docs
+versioning:
+  scheme: uri-path
+  current: v0
+  docs: https://www.headspin.io/docs
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No formal deprecation / Sunset-header policy is published by HeadSpin.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+notes: >-
+  HeadSpin publishes documentation but no public status page, deprecation policy, or
+  SLA page. The REST API is versioned in the URI path (v0). No StatusPage or Deprecation
+  pointer is emitted because neither surface is published.

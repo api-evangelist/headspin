@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.headspin.io/docs + https://www.headspin.io/blog/leverage-headspin-rest-apis-in-appium-script
+summary: Cross-cutting request/response conventions for the HeadSpin v0 REST API, captured from the public docs (no OpenAPI published).
+authentication:
+  style: bearer-token
+  header: "Authorization: Bearer <api_token>"
+  ref: authentication/headspin-authentication.yml
+base_url:
+  rest: https://api-dev.headspin.io/v0
+  appium_load_balancer: https://appium-dev.headspin.io:443/v0
+versioning:
+  scheme: uri-path
+  current: v0
+  example: https://api-dev.headspin.io/v0/devices/
+content_type:
+  request: application/json
+  response: application/json
+idempotency:
+  supported: false
+  note: HeadSpin does not document an idempotency-key header or contract.
+pagination:
+  documented: false
+  note: HeadSpin device/session list endpoints are not documented with a formal pagination contract.
+error_envelope:
+  documented: false
+  note: Errors are returned as JSON with HTTP status codes; HeadSpin publishes no RFC 9457 problem+json catalog.
+resources:
+  - devices    # https://api-dev.headspin.io/v0/devices/
+  - sessions   # https://api-dev.headspin.io/v0/sessions/{session_id}
+  - apps       # https://api-dev.headspin.io/v0/apps/apk/...
+  - audio      # https://api-dev.headspin.io/v0/audio/capture/...
+  - api/token  # https://api-dev.headspin.io/v0/api/token

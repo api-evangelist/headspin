@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: derived
+status: candidate
+source: https://www.headspin.io/docs (documented v0 REST endpoints; no OpenAPI published, no official MCP server found)
+server:
+  name: headspin
+  transport: http
+notes: >-
+  No official HeadSpin MCP server was found in the docs, npm (@modelcontextprotocol),
+  or public MCP registries. This is a CANDIDATE tool list derived from HeadSpin's
+  publicly documented v0 REST API endpoints so an MCP server could be scaffolded.
+tools:
+  - name: get_api_token
+    description: Mint / retrieve a HeadSpin API token.
+    source_operation: POST https://api-dev.headspin.io/v0/api/token
+  - name: list_devices
+    description: List real devices available in the HeadSpin fleet.
+    source_operation: GET https://api-dev.headspin.io/v0/devices/
+  - name: get_device_automation_config
+    description: Retrieve device automation configuration.
+    source_operation: GET https://api-dev.headspin.io/v0/devices/automation-config
+  - name: control_session
+    description: Control / update a capture session (start, stop, annotate).
+    source_operation: PATCH https://api-dev.headspin.io/v0/sessions/{session_id}
+  - name: download_session_har
+    description: Download captured network traffic for a session in HAR format.
+    source_operation: GET https://api-dev.headspin.io/v0/sessions/{session_id}.har
+  - name: instrument_apk
+    description: Apply instrumentation (e.g. NetworkSecurity, ActivityCollector) to an uploaded APK.
+    source_operation: POST https://api-dev.headspin.io/v0/apps/apk/package/{package_name}/instrument
+  - name: start_audio_capture
+    description: Start audio capture on a session.
+    source_operation: POST https://api-dev.headspin.io/v0/audio/capture/start

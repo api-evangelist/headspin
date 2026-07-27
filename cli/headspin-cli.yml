@@ -1,0 +1,31 @@
+generated: '2026-07-19'
+method: searched
+source: https://pypi.org/project/headspin-cli/ + https://github.com/projectxyzio/headspin-cli
+name: hs
+description: Official HeadSpin platform command-line interface. Talks to the HeadSpin v0 REST API (Bearer API-token auth) for managing authentication, devices, and capture sessions.
+official: true
+package: headspin-cli
+registry: pypi
+install:
+  - pip install --upgrade headspin-cli
+authentication: HeadSpin API token via `hs auth init <token>` (stored locally; sent as Bearer token to the v0 API).
+commands:
+  - group: auth
+    description: Manage HeadSpin API tokens / credentials.
+    examples:
+      - hs auth init <token>
+      - hs auth ls
+      - hs auth set-default
+  - group: device
+    description: List and connect to real devices in the HeadSpin fleet.
+    examples:
+      - hs device ls
+      - hs device connect <selector>
+  - group: session
+    description: Manage and inspect capture sessions and their artifacts.
+    examples:
+      - hs session ls
+      - hs session inspect <session_id>
+      - hs session start
+      - hs session stop
+      - hs session har <session_id>
