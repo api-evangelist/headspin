@@ -64,6 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-HeadSpin is a company surfaced as a portfolio company of battery-ventures, gv, iconiq-capital and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+HeadSpin is a real-device digital-experience, functional, and performance testing platform for mobile, web, and OTT applications. Teams test, monitor, and optimize app behavior on real devices and real SIMs across 60+ locations in 50+ countries, running manual and automated tests through frameworks such as Appium and Selenium while capturing 130+ performance KPIs across app, device, browser, audio-video, and network layers. HeadSpin exposes a v0 REST API (Bearer API-token auth) for authentication, device management, capture sessions, app instrumentation, biometrics, and audio/video capture, plus an official `hs` command-line interface and a family of open-source Appium drivers for Roku, LG WebOS, and Samsung Tizen TV.
 
-Backed by: battery-ventures, gv, iconiq-capital — http://headspin.io
+**Areas:** Company · Testing · Mobile · Performance · Real Device Testing · Automation · Appium · OTT · Quality Assurance · Monitoring
+
+## HeadSpin on APIs.io
+
+Everything profiled for HeadSpin is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/headspin/](https://apis.io/providers/headspin/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [HeadSpin REST API (v0)](https://apis.io/apis/headspin/headspin-rest-api-v0/) — HeadSpin's v0 REST API for authentication, real-device management, capture sessions, app (APK/IPA) instrumentation, biometrics, and audio/video capture.…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [headspin](https://apis.io/servers/headspin/headspin/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Headspin Authentication](https://apis.io/security/headspin/headspin-authentication/)
+- [Headspin Domain Security](https://apis.io/security/headspin/headspin-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.headspin.io)
+- [Documentation](https://www.headspin.io/docs)
+- [API reference](https://www.headspin.io/docs)
+- [Pricing](https://www.headspin.io/pricing)
+- [Blog](https://www.headspin.io/blog)
+- [Terms of service](https://www.headspin.io/terms)
+- [Privacy policy](https://www.headspin.io/terms/privacy-policy)
+- [GitHub](https://github.com/headspinio)
+
+## API Evangelist rating
+
+**Kin Score 23.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 38.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/headspin/](https://apis.io/providers/headspin/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for HeadSpin: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/headspin/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
